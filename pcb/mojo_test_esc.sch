@@ -692,6 +692,37 @@ No silk labels on pins
 <smd name="GND_PAD2" x="0" y="0" dx="14" dy="5.1" layer="1" stop="no" thermals="no" cream="no"/>
 <smd name="GND_PAD3" x="0" y="0" dx="14" dy="5.1" layer="16" stop="no" thermals="no" cream="no"/>
 </package>
+<package name="D2PAK">
+<smd name="G1" x="6.7" y="-2.54" dx="3.5" dy="1.6" layer="1"/>
+<smd name="S3" x="6.7" y="2.54" dx="3.5" dy="1.6" layer="1"/>
+<smd name="D2" x="-3.575" y="0" dx="9.75" dy="12.2" layer="1"/>
+<wire x1="-8.75" y1="6.5" x2="5.75" y2="6.5" width="0.127" layer="33"/>
+<wire x1="5.75" y1="6.5" x2="5.75" y2="3.75" width="0.127" layer="33"/>
+<wire x1="5.75" y1="1.25" x2="5.75" y2="-1.25" width="0.127" layer="33"/>
+<wire x1="5.75" y1="-3.75" x2="5.75" y2="-6.5" width="0.127" layer="33"/>
+<wire x1="5.75" y1="-6.5" x2="-8.75" y2="-6.5" width="0.127" layer="33"/>
+<wire x1="-8.75" y1="-6.5" x2="-8.75" y2="6.5" width="0.127" layer="33"/>
+</package>
+<package name="SOT23">
+<smd name="D" x="0" y="1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="S" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="G" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<wire x1="-1.5" y1="0.7" x2="1.5" y2="0.7" width="0.127" layer="21"/>
+<wire x1="1.5" y1="0.7" x2="1.5" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-0.7" x2="-1.5" y2="-0.7" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-0.7" x2="-1.5" y2="0.7" width="0.127" layer="21"/>
+<wire x1="-1.7" y1="0.9" x2="-0.6" y2="0.9" width="0.127" layer="33"/>
+<wire x1="0.6" y1="0.9" x2="1.7" y2="0.9" width="0.127" layer="33"/>
+<wire x1="1.7" y1="0.9" x2="1.7" y2="-0.9" width="0.127" layer="33"/>
+<wire x1="1.7" y1="-0.9" x2="1.6" y2="-0.9" width="0.127" layer="33"/>
+<wire x1="0.3" y1="-0.9" x2="-0.3" y2="-0.9" width="0.127" layer="33"/>
+<wire x1="-1.6" y1="-0.9" x2="-1.7" y2="-0.9" width="0.127" layer="33"/>
+<wire x1="-1.7" y1="-0.9" x2="-1.7" y2="0.9" width="0.127" layer="33"/>
+<text x="-1.05" y="-0.2" size="0.4064" layer="33" font="vector">MOSFET</text>
+<text x="-1" y="1.25" size="0.4064" layer="33" font="vector">D</text>
+<text x="-1.9" y="-1.5" size="0.4064" layer="33" font="vector">G</text>
+<text x="1.6" y="-1.5" size="0.4064" layer="33" font="vector">S</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MOJO_HEADER_1">
@@ -876,6 +907,49 @@ No silk labels on pins
 <pin name="EN_BUCK" x="15.24" y="33.02" visible="pin" length="middle" rot="R180"/>
 <pin name="SS_TR" x="15.24" y="35.56" visible="pin" length="middle" rot="R180"/>
 <pin name="GND" x="0" y="-43.18" visible="pin" length="middle" rot="R90"/>
+</symbol>
+<symbol name="MOSFET">
+<pin name="S3" x="0" y="-7.62" visible="off" length="middle" rot="R90"/>
+<pin name="D2" x="0" y="7.62" visible="off" length="middle" rot="R270"/>
+<pin name="G1" x="-7.62" y="-2.54" visible="off" length="middle"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="2.54" x2="-1.905" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="1.27" x2="-1.905" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="1.905" x2="0" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="1.905" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.905" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="0.635" x2="-1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="0" x2="-1.905" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="0" x2="-1.27" y2="0.635" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="0" x2="-1.27" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-1.27" x2="-1.905" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-2.54" x2="-1.905" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-1.905" x2="0" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="1.905" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.905" y1="2.54" x2="1.905" y2="0.635" width="0.254" layer="94"/>
+<wire x1="1.905" y1="0.635" x2="1.27" y2="0.635" width="0.254" layer="94"/>
+<wire x1="0.635" y1="0" x2="1.27" y2="0.635" width="0.254" layer="94"/>
+<wire x1="1.905" y1="0.635" x2="2.54" y2="0.635" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0.635" x2="3.175" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="0.635" x2="1.27" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="1.905" y1="0.635" x2="2.54" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-0.635" x2="1.27" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="1.905" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-0.635" x2="1.905" y2="-2.54" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="4.259709375" width="0.254" layer="94"/>
+<polygon width="0.254" layer="94">
+<vertex x="-1.27" y="0.635"/>
+<vertex x="-1.27" y="-0.635"/>
+<vertex x="-1.905" y="0"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="1.905" y="0.635"/>
+<vertex x="1.27" y="-0.635"/>
+<vertex x="2.54" y="-0.635"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -1178,6 +1252,33 @@ No silk labels on pins
 </device>
 </devices>
 </deviceset>
+<deviceset name="MOSFET">
+<gates>
+<gate name="G$1" symbol="MOSFET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="D2PAK" package="D2PAK">
+<connects>
+<connect gate="G$1" pin="D2" pad="D2"/>
+<connect gate="G$1" pin="G1" pad="G1"/>
+<connect gate="G$1" pin="S3" pad="S3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOT23" package="SOT23">
+<connects>
+<connect gate="G$1" pin="D2" pad="D"/>
+<connect gate="G$1" pin="G1" pad="G"/>
+<connect gate="G$1" pin="S3" pad="S"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="supply1">
@@ -1226,6 +1327,12 @@ No silk labels on pins
 <part name="B1" library="mojo_test_esc" deviceset="MOJO_NO_ANALOG" device="V3_NO_LABEL"/>
 <part name="U$1" library="mojo_test_esc" deviceset="DRV8302" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
+<part name="U$2" library="mojo_test_esc" deviceset="MOSFET" device="SOT23"/>
+<part name="U$3" library="mojo_test_esc" deviceset="MOSFET" device="SOT23"/>
+<part name="U$4" library="mojo_test_esc" deviceset="MOSFET" device="SOT23"/>
+<part name="U$5" library="mojo_test_esc" deviceset="MOSFET" device="SOT23"/>
+<part name="U$6" library="mojo_test_esc" deviceset="MOSFET" device="SOT23"/>
+<part name="U$7" library="mojo_test_esc" deviceset="MOSFET" device="SOT23"/>
 </parts>
 <sheets>
 <sheet>
@@ -1236,6 +1343,12 @@ No silk labels on pins
 <instance part="B1" gate="G$3" x="-27.94" y="-10.16"/>
 <instance part="U$1" gate="G$1" x="53.34" y="50.8"/>
 <instance part="GND1" gate="1" x="53.34" y="2.54"/>
+<instance part="U$2" gate="G$1" x="99.06" y="66.04"/>
+<instance part="U$3" gate="G$1" x="116.84" y="66.04"/>
+<instance part="U$4" gate="G$1" x="134.62" y="66.04"/>
+<instance part="U$5" gate="G$1" x="99.06" y="43.18"/>
+<instance part="U$6" gate="G$1" x="116.84" y="43.18"/>
+<instance part="U$7" gate="G$1" x="134.62" y="43.18"/>
 </instances>
 <busses>
 </busses>
