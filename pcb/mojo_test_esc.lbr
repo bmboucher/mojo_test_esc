@@ -1198,6 +1198,63 @@ No silk labels on pins
 <text x="-1.9" y="-1.5" size="0.4064" layer="33" font="vector">G</text>
 <text x="1.6" y="-1.5" size="0.4064" layer="33" font="vector">S</text>
 </package>
+<package name="SOP_ADVANCE">
+<smd name="P$1" x="-1.925" y="-2.75" dx="0.85" dy="1.45" layer="1"/>
+<smd name="P$2" x="-0.641665625" y="-2.75" dx="0.85" dy="1.45" layer="1"/>
+<smd name="P$3" x="0.641671875" y="-2.75" dx="0.85" dy="1.45" layer="1"/>
+<smd name="P$4" x="1.925" y="-2.75" dx="0.85" dy="1.45" layer="1"/>
+<smd name="P$5" x="0" y="0.55" dx="4.7" dy="3.75" layer="1"/>
+<smd name="P$6" x="-1.925" y="2.95" dx="0.85" dy="1.05" layer="1"/>
+<smd name="P$7" x="-0.64166875" y="2.95" dx="0.85" dy="1.05" layer="1"/>
+<smd name="P$8" x="0.641665625" y="2.95" dx="0.85" dy="1.05" layer="1"/>
+<smd name="P$9" x="1.924996875" y="2.95" dx="0.85" dy="1.05" layer="1"/>
+<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="2.75" x2="-2.75" y2="2.75" width="0.127" layer="33"/>
+<wire x1="-2.75" y1="2.75" x2="-2.75" y2="-2.75" width="0.127" layer="33"/>
+<wire x1="-2.75" y1="-2.75" x2="-2.5" y2="-2.75" width="0.127" layer="33"/>
+<wire x1="2.5" y1="2.75" x2="2.75" y2="2.75" width="0.127" layer="33"/>
+<wire x1="2.75" y1="2.75" x2="2.75" y2="-2.75" width="0.127" layer="33"/>
+<wire x1="2.75" y1="-2.75" x2="2.5" y2="-2.75" width="0.127" layer="33"/>
+<circle x="-3.25" y="-2.25" radius="0.25" width="0.127" layer="33"/>
+<wire x1="-2.6" y1="-3.4" x2="-2.6" y2="-3.7" width="0.127" layer="33"/>
+<wire x1="-2.6" y1="-3.7" x2="1.3" y2="-3.7" width="0.127" layer="33"/>
+<wire x1="1.3" y1="-3.7" x2="1.3" y2="-3.4" width="0.127" layer="33"/>
+<text x="-3.1" y="-3.6" size="0.4064" layer="33" font="vector">S</text>
+<text x="2.6" y="-3.6" size="0.4064" layer="33" font="vector">G</text>
+<wire x1="-2.6" y1="3.4" x2="-2.6" y2="3.7" width="0.127" layer="33"/>
+<wire x1="-2.6" y1="3.7" x2="2.6" y2="3.7" width="0.127" layer="33"/>
+<wire x1="2.6" y1="3.7" x2="2.6" y2="3.4" width="0.127" layer="33"/>
+<text x="-3.1" y="3.1" size="0.4064" layer="33" font="vector">D</text>
+<text x="-3.1" y="3.1" size="0.4064" layer="33" font="vector">D</text>
+</package>
+<package name="EXB2HV">
+<smd name="P2" x="-1.25" y="-0.75" dx="0.25" dy="0.5" layer="1"/>
+<smd name="P3" x="-0.75" y="-0.75" dx="0.25" dy="0.5" layer="1"/>
+<smd name="P4" x="-0.25" y="-0.75" dx="0.25" dy="0.5" layer="1"/>
+<smd name="P5" x="0.25" y="-0.75" dx="0.25" dy="0.5" layer="1"/>
+<smd name="P6" x="0.75" y="-0.75" dx="0.25" dy="0.5" layer="1"/>
+<smd name="P7" x="1.25" y="-0.75" dx="0.25" dy="0.5" layer="1"/>
+<smd name="P2B" x="-1.25" y="0.75" dx="0.25" dy="0.5" layer="1"/>
+<smd name="P3B" x="-0.75" y="0.75" dx="0.25" dy="0.5" layer="1"/>
+<smd name="P4B" x="-0.25" y="0.75" dx="0.25" dy="0.5" layer="1"/>
+<smd name="P5B" x="0.25" y="0.75" dx="0.25" dy="0.5" layer="1"/>
+<smd name="P6B" x="0.75" y="0.75" dx="0.25" dy="0.5" layer="1"/>
+<smd name="P7B" x="1.25" y="0.75" dx="0.25" dy="0.5" layer="1"/>
+<smd name="P8B" x="1.8375" y="0.75" dx="0.425" dy="0.5" layer="1"/>
+<smd name="P8" x="1.8375" y="-0.75" dx="0.425" dy="0.5" layer="1"/>
+<smd name="P1B" x="-1.8375" y="0.75" dx="0.425" dy="0.5" layer="1"/>
+<smd name="P1" x="-1.8375" y="-0.75" dx="0.425" dy="0.5" layer="1"/>
+<wire x1="1.9" y1="0.8" x2="-1.9" y2="0.8" width="0.05" layer="21"/>
+<wire x1="-1.9" y1="0.8" x2="-1.9" y2="-0.8" width="0.05" layer="21"/>
+<wire x1="-1.9" y1="-0.8" x2="1.9" y2="-0.8" width="0.05" layer="21"/>
+<wire x1="1.9" y1="-0.8" x2="1.9" y2="0.8" width="0.05" layer="21"/>
+<wire x1="-2.1" y1="0.3" x2="-2.1" y2="-0.3" width="0.127" layer="33"/>
+<wire x1="2.1" y1="0.3" x2="2.1" y2="-0.3" width="0.127" layer="33"/>
+<text x="-1.1" y="-0.2" size="0.4064" layer="33" font="vector">EXB2HV</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MOJO_ANALOG_HEADER">
@@ -1445,6 +1502,68 @@ No silk labels on pins
 <vertex x="1.27" y="-0.635"/>
 <vertex x="2.54" y="-0.635"/>
 </polygon>
+</symbol>
+<symbol name="RESPACK">
+<pin name="P8" x="-5.08" y="-10.16" visible="off" length="short" direction="pas"/>
+<pin name="P7" x="-5.08" y="-7.62" visible="off" length="short" direction="pas"/>
+<pin name="P6" x="-5.08" y="-5.08" visible="off" length="short" direction="pas"/>
+<pin name="P5" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
+<pin name="P4" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<pin name="P3" x="-5.08" y="2.54" visible="off" length="short" direction="pas"/>
+<pin name="P2" x="-5.08" y="5.08" visible="off" length="short" direction="pas"/>
+<pin name="P1" x="-5.08" y="7.62" visible="off" length="short" direction="pas"/>
+<pin name="P1B" x="5.08" y="7.62" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="P2B" x="5.08" y="5.08" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="P3B" x="5.08" y="2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="P4B" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="P5B" x="5.08" y="-2.54" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="P6B" x="5.08" y="-5.08" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="P7B" x="5.08" y="-7.62" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="P8B" x="5.08" y="-10.16" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="-2.54" y1="7.62" x2="-1.905" y2="8.255" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="8.255" x2="-0.635" y2="6.985" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="6.985" x2="0.635" y2="8.255" width="0.254" layer="94"/>
+<wire x1="0.635" y1="8.255" x2="1.905" y2="6.985" width="0.254" layer="94"/>
+<wire x1="1.905" y1="6.985" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="-1.905" y2="5.715" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="5.715" x2="-0.635" y2="4.445" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="4.445" x2="0.635" y2="5.715" width="0.254" layer="94"/>
+<wire x1="0.635" y1="5.715" x2="1.905" y2="4.445" width="0.254" layer="94"/>
+<wire x1="1.905" y1="4.445" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-1.905" y2="3.175" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="3.175" x2="-0.635" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="1.905" x2="0.635" y2="3.175" width="0.254" layer="94"/>
+<wire x1="0.635" y1="3.175" x2="1.905" y2="1.905" width="0.254" layer="94"/>
+<wire x1="1.905" y1="1.905" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.905" y2="0.635" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="0.635" x2="-0.635" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-0.635" x2="0.635" y2="0.635" width="0.254" layer="94"/>
+<wire x1="0.635" y1="0.635" x2="1.905" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-0.635" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-1.905" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-1.905" x2="-0.635" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-3.175" x2="0.635" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-1.905" x2="1.905" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-3.175" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-1.905" y2="-4.445" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-4.445" x2="-0.635" y2="-5.715" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-5.715" x2="0.635" y2="-4.445" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-4.445" x2="1.905" y2="-5.715" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-5.715" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-7.62" x2="-1.905" y2="-6.985" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-6.985" x2="-0.635" y2="-8.255" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-8.255" x2="0.635" y2="-6.985" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-6.985" x2="1.905" y2="-8.255" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-8.255" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-10.16" x2="-1.905" y2="-9.525" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-9.525" x2="-0.635" y2="-10.795" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-10.795" x2="0.635" y2="-9.525" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-9.525" x2="1.905" y2="-10.795" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-10.795" x2="2.54" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="8.89" x2="-3.81" y2="-11.43" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-11.43" x2="3.81" y2="-11.43" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-11.43" x2="3.81" y2="8.89" width="0.254" layer="94"/>
+<wire x1="3.81" y1="8.89" x2="-3.81" y2="8.89" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2016,6 +2135,46 @@ No silk labels on pins
 <connect gate="G$1" pin="D2" pad="D"/>
 <connect gate="G$1" pin="G1" pad="G"/>
 <connect gate="G$1" pin="S3" pad="S"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="SOP_ADVANCE">
+<connects>
+<connect gate="G$1" pin="D2" pad="P$5 P$6 P$7 P$8 P$9"/>
+<connect gate="G$1" pin="G1" pad="P$4"/>
+<connect gate="G$1" pin="S3" pad="P$1 P$2 P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EXB2HV">
+<gates>
+<gate name="G$1" symbol="RESPACK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="EXB2HV">
+<connects>
+<connect gate="G$1" pin="P1" pad="P1"/>
+<connect gate="G$1" pin="P1B" pad="P1B"/>
+<connect gate="G$1" pin="P2" pad="P2"/>
+<connect gate="G$1" pin="P2B" pad="P2B"/>
+<connect gate="G$1" pin="P3" pad="P3"/>
+<connect gate="G$1" pin="P3B" pad="P3B"/>
+<connect gate="G$1" pin="P4" pad="P4"/>
+<connect gate="G$1" pin="P4B" pad="P4B"/>
+<connect gate="G$1" pin="P5" pad="P5"/>
+<connect gate="G$1" pin="P5B" pad="P5B"/>
+<connect gate="G$1" pin="P6" pad="P6"/>
+<connect gate="G$1" pin="P6B" pad="P6B"/>
+<connect gate="G$1" pin="P7" pad="P7"/>
+<connect gate="G$1" pin="P7B" pad="P7B"/>
+<connect gate="G$1" pin="P8" pad="P8"/>
+<connect gate="G$1" pin="P8B" pad="P8B"/>
 </connects>
 <technologies>
 <technology name=""/>

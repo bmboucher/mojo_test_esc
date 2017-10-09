@@ -6,35 +6,35 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
-<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
-<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
@@ -146,6 +146,11 @@
 <wire x1="78.74" y1="63.5" x2="78.74" y2="0" width="0" layer="20"/>
 <wire x1="78.74" y1="0" x2="0" y2="0" width="0" layer="20"/>
 <wire x1="0" y1="0" x2="0" y2="63.5" width="0" layer="20"/>
+<wire x1="0" y1="30.48" x2="78.74" y2="30.48" width="0.127" layer="21"/>
+<wire x1="38.1" y1="63.5" x2="38.1" y2="0" width="0.127" layer="21"/>
+<text x="71.8" y="48" size="1.778" layer="33" font="vector">A</text>
+<text x="71.8" y="42.9" size="1.778" layer="33" font="vector">B</text>
+<text x="71.8" y="37.8" size="1.778" layer="33" font="vector">C</text>
 </plain>
 <libraries>
 <library name="mojo_test_esc">
@@ -481,25 +486,142 @@ No silk labels on pins
 <smd name="GND_PAD2" x="0" y="0" dx="14" dy="5.1" layer="1" stop="no" thermals="no" cream="no"/>
 <smd name="GND_PAD3" x="0" y="0" dx="14" dy="5.1" layer="16" stop="no" thermals="no" cream="no"/>
 </package>
-<package name="SOT23">
-<smd name="D" x="0" y="1" dx="0.8" dy="0.9" layer="1"/>
-<smd name="S" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
-<smd name="G" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
-<wire x1="-1.5" y1="0.7" x2="1.5" y2="0.7" width="0.127" layer="21"/>
-<wire x1="1.5" y1="0.7" x2="1.5" y2="-0.7" width="0.127" layer="21"/>
-<wire x1="1.5" y1="-0.7" x2="-1.5" y2="-0.7" width="0.127" layer="21"/>
-<wire x1="-1.5" y1="-0.7" x2="-1.5" y2="0.7" width="0.127" layer="21"/>
-<wire x1="-1.7" y1="0.9" x2="-0.6" y2="0.9" width="0.127" layer="33"/>
-<wire x1="0.6" y1="0.9" x2="1.7" y2="0.9" width="0.127" layer="33"/>
-<wire x1="1.7" y1="0.9" x2="1.7" y2="-0.9" width="0.127" layer="33"/>
-<wire x1="1.7" y1="-0.9" x2="1.6" y2="-0.9" width="0.127" layer="33"/>
-<wire x1="0.3" y1="-0.9" x2="-0.3" y2="-0.9" width="0.127" layer="33"/>
-<wire x1="-1.6" y1="-0.9" x2="-1.7" y2="-0.9" width="0.127" layer="33"/>
-<wire x1="-1.7" y1="-0.9" x2="-1.7" y2="0.9" width="0.127" layer="33"/>
-<text x="-1.05" y="-0.2" size="0.4064" layer="33" font="vector">MOSFET</text>
-<text x="-1" y="1.25" size="0.4064" layer="33" font="vector">D</text>
-<text x="-1.9" y="-1.5" size="0.4064" layer="33" font="vector">G</text>
-<text x="1.6" y="-1.5" size="0.4064" layer="33" font="vector">S</text>
+<package name="SOP_ADVANCE">
+<smd name="P$1" x="-1.925" y="-2.75" dx="0.85" dy="1.45" layer="1"/>
+<smd name="P$2" x="-0.641665625" y="-2.75" dx="0.85" dy="1.45" layer="1"/>
+<smd name="P$3" x="0.641671875" y="-2.75" dx="0.85" dy="1.45" layer="1"/>
+<smd name="P$4" x="1.925" y="-2.75" dx="0.85" dy="1.45" layer="1"/>
+<smd name="P$5" x="0" y="0.55" dx="4.7" dy="3.75" layer="1"/>
+<smd name="P$6" x="-1.925" y="2.95" dx="0.85" dy="1.05" layer="1"/>
+<smd name="P$7" x="-0.64166875" y="2.95" dx="0.85" dy="1.05" layer="1"/>
+<smd name="P$8" x="0.641665625" y="2.95" dx="0.85" dy="1.05" layer="1"/>
+<smd name="P$9" x="1.924996875" y="2.95" dx="0.85" dy="1.05" layer="1"/>
+<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="2.75" x2="-2.75" y2="2.75" width="0.127" layer="33"/>
+<wire x1="-2.75" y1="2.75" x2="-2.75" y2="-2.75" width="0.127" layer="33"/>
+<wire x1="-2.75" y1="-2.75" x2="-2.5" y2="-2.75" width="0.127" layer="33"/>
+<wire x1="2.5" y1="2.75" x2="2.75" y2="2.75" width="0.127" layer="33"/>
+<wire x1="2.75" y1="2.75" x2="2.75" y2="-2.75" width="0.127" layer="33"/>
+<wire x1="2.75" y1="-2.75" x2="2.5" y2="-2.75" width="0.127" layer="33"/>
+<circle x="-3.25" y="-2.25" radius="0.25" width="0.127" layer="33"/>
+<wire x1="-2.6" y1="-3.4" x2="-2.6" y2="-3.7" width="0.127" layer="33"/>
+<wire x1="-2.6" y1="-3.7" x2="1.3" y2="-3.7" width="0.127" layer="33"/>
+<wire x1="1.3" y1="-3.7" x2="1.3" y2="-3.4" width="0.127" layer="33"/>
+<text x="-3.1" y="-3.6" size="0.4064" layer="33" font="vector">S</text>
+<text x="2.6" y="-3.6" size="0.4064" layer="33" font="vector">G</text>
+<wire x1="-2.6" y1="3.4" x2="-2.6" y2="3.7" width="0.127" layer="33"/>
+<wire x1="-2.6" y1="3.7" x2="2.6" y2="3.7" width="0.127" layer="33"/>
+<wire x1="2.6" y1="3.7" x2="2.6" y2="3.4" width="0.127" layer="33"/>
+<text x="-3.1" y="3.1" size="0.4064" layer="33" font="vector">D</text>
+<text x="-3.1" y="3.1" size="0.4064" layer="33" font="vector">D</text>
+</package>
+<package name="EXB2HV">
+<smd name="P2" x="-1.25" y="-0.75" dx="0.25" dy="0.5" layer="1"/>
+<smd name="P3" x="-0.75" y="-0.75" dx="0.25" dy="0.5" layer="1"/>
+<smd name="P4" x="-0.25" y="-0.75" dx="0.25" dy="0.5" layer="1"/>
+<smd name="P5" x="0.25" y="-0.75" dx="0.25" dy="0.5" layer="1"/>
+<smd name="P6" x="0.75" y="-0.75" dx="0.25" dy="0.5" layer="1"/>
+<smd name="P7" x="1.25" y="-0.75" dx="0.25" dy="0.5" layer="1"/>
+<smd name="P2B" x="-1.25" y="0.75" dx="0.25" dy="0.5" layer="1"/>
+<smd name="P3B" x="-0.75" y="0.75" dx="0.25" dy="0.5" layer="1"/>
+<smd name="P4B" x="-0.25" y="0.75" dx="0.25" dy="0.5" layer="1"/>
+<smd name="P5B" x="0.25" y="0.75" dx="0.25" dy="0.5" layer="1"/>
+<smd name="P6B" x="0.75" y="0.75" dx="0.25" dy="0.5" layer="1"/>
+<smd name="P7B" x="1.25" y="0.75" dx="0.25" dy="0.5" layer="1"/>
+<smd name="P8B" x="1.8375" y="0.75" dx="0.425" dy="0.5" layer="1"/>
+<smd name="P8" x="1.8375" y="-0.75" dx="0.425" dy="0.5" layer="1"/>
+<smd name="P1B" x="-1.8375" y="0.75" dx="0.425" dy="0.5" layer="1"/>
+<smd name="P1" x="-1.8375" y="-0.75" dx="0.425" dy="0.5" layer="1"/>
+<wire x1="1.9" y1="0.8" x2="-1.9" y2="0.8" width="0.05" layer="21"/>
+<wire x1="-1.9" y1="0.8" x2="-1.9" y2="-0.8" width="0.05" layer="21"/>
+<wire x1="-1.9" y1="-0.8" x2="1.9" y2="-0.8" width="0.05" layer="21"/>
+<wire x1="1.9" y1="-0.8" x2="1.9" y2="0.8" width="0.05" layer="21"/>
+<wire x1="-2.1" y1="0.3" x2="-2.1" y2="-0.3" width="0.127" layer="33"/>
+<wire x1="2.1" y1="0.3" x2="2.1" y2="-0.3" width="0.127" layer="33"/>
+<text x="-1.1" y="-0.2" size="0.4064" layer="33" font="vector">EXB2HV</text>
+</package>
+</packages>
+</library>
+<library name="SparkFun-Connectors">
+<description>&lt;h3&gt;SparkFun Connectors&lt;/h3&gt;
+This library contains electrically-functional connectors. 
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="SCREWTERMINAL-5MM-3">
+<description>&lt;h3&gt;Screw Terminal  5mm Pitch -3 Pin PTH&lt;/h3&gt;
+&lt;p&gt;Specifications:
+&lt;ul&gt;&lt;li&gt;Pin count: 3&lt;/li&gt;
+&lt;li&gt;Pin pitch: 5mm/197mil&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=”https://www.sparkfun.com/datasheets/Prototyping/Screw-Terminal-5mm.pdf”&gt;Datasheet referenced for footprint&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Example device(s):
+&lt;ul&gt;&lt;li&gt;CONN_03&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<wire x1="-3.1" y1="4.2" x2="13.1" y2="4.2" width="0.2032" layer="21"/>
+<wire x1="13.1" y1="4.2" x2="13.1" y2="-2.3" width="0.2032" layer="21"/>
+<wire x1="13.1" y1="-2.3" x2="13.1" y2="-3.3" width="0.2032" layer="21"/>
+<wire x1="13.1" y1="-3.3" x2="-3.1" y2="-3.3" width="0.2032" layer="21"/>
+<wire x1="-3.1" y1="-3.3" x2="-3.1" y2="-2.3" width="0.2032" layer="21"/>
+<wire x1="-3.1" y1="-2.3" x2="-3.1" y2="4.2" width="0.2032" layer="21"/>
+<wire x1="13.1" y1="-2.3" x2="-3.1" y2="-2.3" width="0.2032" layer="21"/>
+<wire x1="-3.1" y1="-1.35" x2="-3.7" y2="-1.35" width="0.2032" layer="51"/>
+<wire x1="-3.7" y1="-1.35" x2="-3.7" y2="-2.35" width="0.2032" layer="51"/>
+<wire x1="-3.7" y1="-2.35" x2="-3.1" y2="-2.35" width="0.2032" layer="51"/>
+<wire x1="13.1" y1="4" x2="13.7" y2="4" width="0.2032" layer="51"/>
+<wire x1="13.7" y1="4" x2="13.7" y2="3" width="0.2032" layer="51"/>
+<wire x1="13.7" y1="3" x2="13.1" y2="3" width="0.2032" layer="51"/>
+<circle x="2.5" y="3.7" radius="0.2828" width="0.127" layer="51"/>
+<pad name="1" x="0" y="0" drill="1.3" diameter="2.413" shape="square"/>
+<pad name="2" x="5" y="0" drill="1.3" diameter="2.413"/>
+<pad name="3" x="10" y="0" drill="1.3" diameter="2.413"/>
+<text x="3.683" y="2.794" size="0.6096" layer="25" font="vector" ratio="20">&gt;NAME</text>
+<text x="3.429" y="1.905" size="0.6096" layer="27" font="vector" ratio="20">&gt;VALUE</text>
+</package>
+</packages>
+</library>
+<library name="SparkFun-Resistors">
+<description>&lt;h3&gt;SparkFun Resistors&lt;/h3&gt;
+This library contains resistors. Reference designator:R. 
+&lt;br&gt;
+&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is &lt;b&gt; the end user's responsibility&lt;/b&gt; to ensure correctness and suitablity for a given componet or application. 
+&lt;br&gt;
+&lt;br&gt;If you enjoy using this library, please buy one of our products at &lt;a href=" www.sparkfun.com"&gt;SparkFun.com&lt;/a&gt;.
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;
+&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="1210">
+<description>&lt;p&gt;&lt;b&gt;Generic 3225 (1210) package&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;0.2mm courtyard excess rounded to nearest 0.05mm.&lt;/p&gt;</description>
+<wire x1="-1.5365" y1="1.1865" x2="1.5365" y2="1.1865" width="0.127" layer="51"/>
+<wire x1="1.5365" y1="1.1865" x2="1.5365" y2="-1.1865" width="0.127" layer="51"/>
+<wire x1="1.5365" y1="-1.1865" x2="-1.5365" y2="-1.1865" width="0.127" layer="51"/>
+<wire x1="-1.5365" y1="-1.1865" x2="-1.5365" y2="1.1865" width="0.127" layer="51"/>
+<smd name="1" x="-1.755" y="0" dx="1.27" dy="2.06" layer="1"/>
+<smd name="2" x="1.755" y="0" dx="1.27" dy="2.06" layer="1"/>
+<text x="0" y="1.397" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.397" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="-2.59" y1="1.45" x2="2.59" y2="1.45" width="0.0508" layer="39"/>
+<wire x1="2.59" y1="1.45" x2="2.59" y2="-1.45" width="0.0508" layer="39"/>
+<wire x1="2.59" y1="-1.45" x2="-2.59" y2="-1.45" width="0.0508" layer="39"/>
+<wire x1="-2.59" y1="-1.45" x2="-2.59" y2="1.45" width="0.0508" layer="39"/>
 </package>
 </packages>
 </library>
@@ -693,13 +815,24 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="B1" library="mojo_test_esc" package="MOJO_V3_NO_LABEL_NO_ANALOG" value="MOJO_NO_ANALOGV3_NO_LABEL" x="38.1" y="30.48"/>
-<element name="U$1" library="mojo_test_esc" package="DRV8302" value="DRV8302" x="49.5" y="38.83"/>
-<element name="U$2" library="mojo_test_esc" package="SOT23" value="MOSFETSOT23" x="73" y="48" rot="R270"/>
-<element name="U$3" library="mojo_test_esc" package="SOT23" value="MOSFETSOT23" x="73" y="43" rot="R270"/>
-<element name="U$4" library="mojo_test_esc" package="SOT23" value="MOSFETSOT23" x="73" y="38" rot="R270"/>
-<element name="U$5" library="mojo_test_esc" package="SOT23" value="MOSFETSOT23" x="73" y="48" rot="MR90"/>
-<element name="U$6" library="mojo_test_esc" package="SOT23" value="MOSFETSOT23" x="73" y="43" rot="MR90"/>
-<element name="U$7" library="mojo_test_esc" package="SOT23" value="MOSFETSOT23" x="73" y="38" rot="MR90"/>
+<element name="U$1" library="mojo_test_esc" package="DRV8302" value="DRV8302" x="50.1" y="42.43"/>
+<element name="MOSFET_H_A_1" library="mojo_test_esc" package="SOP_ADVANCE" value="MOSFET" x="66.4" y="50.2" rot="R90"/>
+<element name="MOSFET_H_B_1" library="mojo_test_esc" package="SOP_ADVANCE" value="MOSFET" x="66.4" y="43.7" rot="R90"/>
+<element name="MOSFET_H_C_1" library="mojo_test_esc" package="SOP_ADVANCE" value="MOSFET" x="66.4" y="37.2" rot="R90"/>
+<element name="MOSFET_L_A_1" library="mojo_test_esc" package="SOP_ADVANCE" value="MOSFET" x="66.25" y="50.15" rot="MR90"/>
+<element name="MOSFET_L_B_1" library="mojo_test_esc" package="SOP_ADVANCE" value="MOSFET" x="66.45" y="43.75" rot="MR90"/>
+<element name="MOSFET_L_C_1" library="mojo_test_esc" package="SOP_ADVANCE" value="MOSFET" x="66.25" y="37.15" rot="MR90"/>
+<element name="J1" library="SparkFun-Connectors" package="SCREWTERMINAL-5MM-3" value="" x="74.9" y="38.7" rot="R90">
+<attribute name="SF_SKU" value="PRT-08433" x="74.9" y="38.7" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PROD_ID" value="CONN-10134" x="74.9" y="38.7" size="1.778" layer="27" rot="R90" display="off"/>
+</element>
+<element name="U$2" library="mojo_test_esc" package="EXB2HV" value="EXB2HV" x="52.1" y="50.7"/>
+<element name="R1" library="SparkFun-Resistors" package="1210" value="0.1" x="56" y="37.5">
+<attribute name="PROD_ID" value="RES-12374" x="56" y="37.5" size="1.778" layer="27" display="off"/>
+</element>
+<element name="R2" library="SparkFun-Resistors" package="1210" value="0.1" x="55" y="32.5">
+<attribute name="PROD_ID" value="RES-12374" x="55" y="32.5" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -748,7 +881,7 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="VIA31"/>
 <contactref element="U$1" pad="VIA34"/>
 <contactref element="U$1" pad="VIA44"/>
-<polygon width="0.4064" layer="16" isolate="0.381">
+<polygon width="0.4064" layer="16" isolate="0.381" thermals="no" rank="6">
 <vertex x="1" y="1"/>
 <vertex x="78" y="1"/>
 <vertex x="78" y="62"/>
@@ -757,15 +890,214 @@ design rules under a new name.</description>
 </polygon>
 <contactref element="U$1" pad="GND_PAD2"/>
 <contactref element="U$1" pad="GND_PAD3"/>
-<wire x1="49.5" y1="38.83" x2="49.5" y2="38.83" width="0" layer="19" extent="1-16"/>
+<contactref element="MOSFET_L_C_1" pad="P$1"/>
+<contactref element="MOSFET_L_C_1" pad="P$2"/>
+<contactref element="MOSFET_L_C_1" pad="P$3"/>
+<contactref element="R1" pad="1"/>
+<contactref element="R2" pad="1"/>
+<wire x1="50.1" y1="42.43" x2="50.1" y2="42.43" width="0" layer="19" extent="1-16"/>
+<wire x1="54.245" y1="37.5" x2="54" y2="40.48" width="0" layer="19" extent="1-1"/>
+<wire x1="53.245" y1="32.5" x2="54.245" y2="37.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+12V">
-<polygon width="0.4064" layer="1" isolate="0.381">
+<polygon width="0.4064" layer="1" isolate="0.508" thermals="no" rank="6">
 <vertex x="1" y="1"/>
 <vertex x="78" y="1"/>
 <vertex x="78" y="63"/>
 <vertex x="1" y="63"/>
 </polygon>
+<contactref element="MOSFET_H_B_1" pad="P$5"/>
+<contactref element="MOSFET_H_A_1" pad="P$5"/>
+<contactref element="MOSFET_H_C_1" pad="P$5"/>
+<contactref element="MOSFET_H_A_1" pad="P$6"/>
+<contactref element="MOSFET_H_A_1" pad="P$7"/>
+<contactref element="MOSFET_H_A_1" pad="P$8"/>
+<contactref element="MOSFET_H_A_1" pad="P$9"/>
+<contactref element="MOSFET_H_B_1" pad="P$6"/>
+<contactref element="MOSFET_H_B_1" pad="P$7"/>
+<contactref element="MOSFET_H_B_1" pad="P$8"/>
+<contactref element="MOSFET_H_B_1" pad="P$9"/>
+<contactref element="MOSFET_H_C_1" pad="P$6"/>
+<contactref element="MOSFET_H_C_1" pad="P$7"/>
+<contactref element="MOSFET_H_C_1" pad="P$8"/>
+<contactref element="MOSFET_H_C_1" pad="P$9"/>
+</signal>
+<signal name="SH_A">
+<contactref element="MOSFET_H_A_1" pad="P$1"/>
+<contactref element="MOSFET_L_A_1" pad="P$5"/>
+<contactref element="MOSFET_H_A_1" pad="P$2"/>
+<contactref element="MOSFET_H_A_1" pad="P$3"/>
+<contactref element="MOSFET_L_A_1" pad="P$6"/>
+<contactref element="MOSFET_L_A_1" pad="P$7"/>
+<contactref element="MOSFET_L_A_1" pad="P$8"/>
+<contactref element="MOSFET_L_A_1" pad="P$9"/>
+<contactref element="J1" pad="3"/>
+<polygon width="0" layer="1" thermals="no">
+<vertex x="68.3" y="51.4"/>
+<vertex x="75.358578125" y="51.4" curve="-45.001266"/>
+<vertex x="75.829290625" y="51.070709375"/>
+<vertex x="76.9" y="49.7"/>
+<vertex x="76.9" y="47.241421875" curve="-45.001266"/>
+<vertex x="76.870709375" y="47.170709375"/>
+<vertex x="76.4" y="46.7"/>
+<vertex x="70.441421875" y="46.7" curve="-45.001266"/>
+<vertex x="70.370709375" y="46.729290625"/>
+<vertex x="69.4" y="47.7"/>
+<vertex x="68.3" y="47.8"/>
+</polygon>
+<polygon width="0" layer="16" thermals="no">
+<vertex x="65.1" y="52.6"/>
+<vertex x="73.9" y="52.6"/>
+<vertex x="76.8" y="49.7"/>
+<vertex x="76.8" y="47.4"/>
+<vertex x="76" y="46.6"/>
+<vertex x="71.4" y="46.6"/>
+<vertex x="70.2" y="47.8"/>
+<vertex x="65" y="47.8"/>
+<vertex x="65" y="52.7"/>
+</polygon>
+</signal>
+<signal name="SH_B">
+<contactref element="MOSFET_H_B_1" pad="P$1"/>
+<contactref element="MOSFET_L_B_1" pad="P$5"/>
+<contactref element="MOSFET_L_B_1" pad="P$6"/>
+<contactref element="MOSFET_L_B_1" pad="P$7"/>
+<contactref element="MOSFET_L_B_1" pad="P$8"/>
+<contactref element="MOSFET_L_B_1" pad="P$9"/>
+<contactref element="MOSFET_H_B_1" pad="P$2"/>
+<contactref element="MOSFET_H_B_1" pad="P$3"/>
+<contactref element="J1" pad="2"/>
+<polygon width="0" layer="1" thermals="no">
+<vertex x="68.3" y="44.9"/>
+<vertex x="70.6" y="44.9"/>
+<vertex x="71.9" y="46.2"/>
+<vertex x="76" y="46.2"/>
+<vertex x="77" y="45.2"/>
+<vertex x="77" y="42.3"/>
+<vertex x="75.8" y="41.1"/>
+<vertex x="68.5" y="41.1"/>
+<vertex x="68.3" y="41.3"/>
+</polygon>
+<polygon width="0" layer="16" thermals="no">
+<vertex x="65" y="46.25"/>
+<vertex x="76.25" y="46.25"/>
+<vertex x="77.25" y="45.25"/>
+<vertex x="77.25" y="42.25"/>
+<vertex x="76.5" y="41.5"/>
+<vertex x="76.25" y="41.25"/>
+<vertex x="65.25" y="41.25"/>
+<vertex x="65" y="41.5"/>
+</polygon>
+</signal>
+<signal name="SH_C">
+<contactref element="MOSFET_H_C_1" pad="P$1"/>
+<contactref element="MOSFET_L_C_1" pad="P$5"/>
+<contactref element="MOSFET_H_C_1" pad="P$2"/>
+<contactref element="MOSFET_H_C_1" pad="P$3"/>
+<contactref element="MOSFET_L_C_1" pad="P$6"/>
+<contactref element="MOSFET_L_C_1" pad="P$7"/>
+<contactref element="MOSFET_L_C_1" pad="P$8"/>
+<contactref element="MOSFET_L_C_1" pad="P$9"/>
+<contactref element="J1" pad="1"/>
+<polygon width="0" layer="1" thermals="no">
+<vertex x="68.3" y="38.4"/>
+<vertex x="70.1" y="38.4"/>
+<vertex x="72.3" y="40.6"/>
+<vertex x="76.3" y="40.6"/>
+<vertex x="77" y="39.9"/>
+<vertex x="77" y="36.4"/>
+<vertex x="75.2" y="34.6"/>
+<vertex x="68.5" y="34.6"/>
+<vertex x="68.3" y="34.8"/>
+</polygon>
+<polygon width="0" layer="16" thermals="no">
+<vertex x="64.75" y="39.5"/>
+<vertex x="72" y="39.5"/>
+<vertex x="73" y="40.5"/>
+<vertex x="77" y="40.5"/>
+<vertex x="77.5" y="40"/>
+<vertex x="77.5" y="36.75"/>
+<vertex x="75.5" y="34.75"/>
+<vertex x="64.75" y="34.75"/>
+</polygon>
+</signal>
+<signal name="SL_B">
+<contactref element="MOSFET_L_B_1" pad="P$1"/>
+<contactref element="MOSFET_L_B_1" pad="P$2"/>
+<contactref element="MOSFET_L_B_1" pad="P$3"/>
+<contactref element="R2" pad="2"/>
+<wire x1="63.7" y1="43.108334375" x2="63.7" y2="44.391671875" width="0" layer="19" extent="16-16"/>
+<wire x1="63.7" y1="41.825" x2="63.7" y2="43.108334375" width="0" layer="19" extent="16-16"/>
+<wire x1="56.755" y1="32.5" x2="63.7" y2="41.825" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="GH_A">
+<contactref element="MOSFET_H_A_1" pad="P$4"/>
+<contactref element="U$2" pad="P2B"/>
+<wire x1="50.85" y1="51.45" x2="69.15" y2="52.125" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="GH_B">
+<contactref element="MOSFET_H_B_1" pad="P$4"/>
+<contactref element="U$2" pad="P4B"/>
+<wire x1="51.85" y1="51.45" x2="69.15" y2="45.625" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="GH_C">
+<contactref element="MOSFET_H_C_1" pad="P$4"/>
+<contactref element="U$2" pad="P6B"/>
+<wire x1="52.85" y1="51.45" x2="69.15" y2="39.125" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="GL_B">
+<contactref element="MOSFET_L_B_1" pad="P$4"/>
+<contactref element="U$2" pad="P5B"/>
+<wire x1="52.35" y1="51.45" x2="63.7" y2="45.675" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="GL_C">
+<contactref element="MOSFET_L_C_1" pad="P$4"/>
+<contactref element="U$2" pad="P7B"/>
+<wire x1="63.5" y1="39.075" x2="53.35" y2="51.45" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="GL_A">
+<contactref element="MOSFET_L_A_1" pad="P$4"/>
+<contactref element="U$2" pad="P3B"/>
+<wire x1="51.35" y1="51.45" x2="63.5" y2="52.075" width="0" layer="19" extent="1-16"/>
+</signal>
+<signal name="N$1">
+<contactref element="U$1" pad="P$47"/>
+<contactref element="U$2" pad="P2"/>
+<wire x1="47.85" y1="46.18" x2="50.85" y2="49.95" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$2">
+<contactref element="U$1" pad="P$45"/>
+<contactref element="U$2" pad="P3"/>
+<wire x1="48.85" y1="46.18" x2="51.35" y2="49.95" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$3">
+<contactref element="U$1" pad="P$42"/>
+<contactref element="U$2" pad="P4"/>
+<wire x1="50.35" y1="46.18" x2="51.85" y2="49.95" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$4">
+<contactref element="U$1" pad="P$40"/>
+<contactref element="U$2" pad="P5"/>
+<wire x1="51.35" y1="46.18" x2="52.35" y2="49.95" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$5">
+<contactref element="U$1" pad="P$37"/>
+<contactref element="U$2" pad="P6"/>
+<wire x1="52.85" y1="46.18" x2="52.85" y2="49.95" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$6">
+<contactref element="U$1" pad="P$35"/>
+<contactref element="U$2" pad="P7"/>
+<wire x1="53.85" y1="46.18" x2="53.35" y2="49.95" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SL_A">
+<contactref element="MOSFET_L_A_1" pad="P$1"/>
+<contactref element="MOSFET_L_A_1" pad="P$2"/>
+<contactref element="MOSFET_L_A_1" pad="P$3"/>
+<contactref element="R1" pad="2"/>
+<wire x1="63.5" y1="50.791671875" x2="63.5" y2="49.508334375" width="0" layer="19" extent="16-16"/>
+<wire x1="63.5" y1="48.225" x2="63.5" y2="49.508334375" width="0" layer="19" extent="16-16"/>
+<wire x1="57.755" y1="37.5" x2="63.5" y2="48.225" width="0" layer="19" extent="1-16"/>
 </signal>
 </signals>
 </board>
