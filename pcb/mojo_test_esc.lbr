@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1058,8 +1058,6 @@ No silk labels on pins
 </package>
 <package name="DRV8302">
 <smd name="GND_PAD" x="0" y="0" dx="6.35" dy="3.61" layer="1" rot="R180"/>
-<rectangle x1="-7" y1="-2.55" x2="7" y2="2.6" layer="1"/>
-<rectangle x1="-7" y1="-2.55" x2="7" y2="2.6" layer="16"/>
 <pad name="VIA1" x="-6.5" y="-1.95" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
 <pad name="VIA2" x="-6.5" y="-0.65" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
 <pad name="VIA3" x="-6.5" y="0.65" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
@@ -1166,6 +1164,19 @@ No silk labels on pins
 <wire x1="-7.25" y1="-2.75" x2="-7.25" y2="2.75" width="0.127" layer="33"/>
 <text x="-4.3" y="-1.9" size="0.6096" layer="33" font="vector" rot="R90">DRV8302</text>
 <circle x="-6.4" y="-1.9" radius="0.565684375" width="0.127" layer="33"/>
+<smd name="GND_PAD2" x="0" y="0" dx="14" dy="5.1" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="GND_PAD3" x="0" y="0" dx="14" dy="5.1" layer="16" stop="no" thermals="no" cream="no"/>
+</package>
+<package name="D2PAK">
+<smd name="G1" x="6.7" y="-2.54" dx="3.5" dy="1.6" layer="1"/>
+<smd name="S3" x="6.7" y="2.54" dx="3.5" dy="1.6" layer="1"/>
+<smd name="D2" x="-3.575" y="0" dx="9.75" dy="12.2" layer="1"/>
+<wire x1="-8.75" y1="6.5" x2="5.75" y2="6.5" width="0.127" layer="33"/>
+<wire x1="5.75" y1="6.5" x2="5.75" y2="3.75" width="0.127" layer="33"/>
+<wire x1="5.75" y1="1.25" x2="5.75" y2="-1.25" width="0.127" layer="33"/>
+<wire x1="5.75" y1="-3.75" x2="5.75" y2="-6.5" width="0.127" layer="33"/>
+<wire x1="5.75" y1="-6.5" x2="-8.75" y2="-6.5" width="0.127" layer="33"/>
+<wire x1="-8.75" y1="-6.5" x2="-8.75" y2="6.5" width="0.127" layer="33"/>
 </package>
 </packages>
 <symbols>
@@ -1332,17 +1343,17 @@ No silk labels on pins
 <pin name="INL_B" x="-15.24" y="-12.7" length="middle"/>
 <pin name="INH_C" x="-15.24" y="-15.24" length="middle"/>
 <pin name="INL_C" x="-15.24" y="-17.78" length="middle"/>
-<pin name="DVDD" x="-15.24" y="-20.32" length="middle"/>
+<pin name="DVDD" x="-15.24" y="-20.32" length="middle" direction="pas"/>
 <pin name="REF" x="-15.24" y="-22.86" length="middle"/>
 <pin name="SO1" x="-15.24" y="-25.4" length="middle"/>
 <pin name="SO2" x="-15.24" y="-27.94" length="middle"/>
-<pin name="AVDD" x="-15.24" y="-30.48" length="middle"/>
-<pin name="AGND" x="-15.24" y="-33.02" length="middle"/>
+<pin name="AVDD" x="-15.24" y="-30.48" length="middle" direction="pas"/>
+<pin name="AGND" x="-15.24" y="-33.02" length="middle" direction="pas"/>
 <wire x1="-10.16" y1="38.1" x2="-10.16" y2="-38.1" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-38.1" x2="10.16" y2="-38.1" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-38.1" x2="10.16" y2="38.1" width="0.254" layer="94"/>
 <wire x1="10.16" y1="38.1" x2="-10.16" y2="38.1" width="0.254" layer="94"/>
-<pin name="PVDD1" x="15.24" y="-33.02" visible="pin" length="middle" rot="R180"/>
+<pin name="PVDD1" x="15.24" y="-33.02" visible="pin" length="middle" direction="pas" rot="R180"/>
 <pin name="SP2" x="15.24" y="-30.48" visible="pin" length="middle" rot="R180"/>
 <pin name="SN2" x="15.24" y="-27.94" visible="pin" length="middle" rot="R180"/>
 <pin name="SP1" x="15.24" y="-25.4" visible="pin" length="middle" rot="R180"/>
@@ -1367,10 +1378,53 @@ No silk labels on pins
 <pin name="PH@2" x="15.24" y="22.86" visible="pin" length="middle" rot="R180"/>
 <pin name="BST_BK" x="15.24" y="25.4" visible="pin" length="middle" rot="R180"/>
 <pin name="PVDD2@1" x="15.24" y="27.94" visible="pin" length="middle" rot="R180"/>
-<pin name="PVDD2@2" x="15.24" y="30.48" visible="pin" length="middle" rot="R180"/>
+<pin name="PVDD2@2" x="15.24" y="30.48" visible="pin" length="middle" direction="pas" rot="R180"/>
 <pin name="EN_BUCK" x="15.24" y="33.02" visible="pin" length="middle" rot="R180"/>
 <pin name="SS_TR" x="15.24" y="35.56" visible="pin" length="middle" rot="R180"/>
-<pin name="GND" x="0" y="-43.18" visible="pin" length="middle" rot="R90"/>
+<pin name="GND" x="0" y="-43.18" visible="pin" length="middle" direction="pas" rot="R90"/>
+</symbol>
+<symbol name="MOSFET">
+<pin name="S3" x="0" y="-7.62" visible="pin" length="middle" rot="R90"/>
+<pin name="D2" x="0" y="7.62" length="middle" rot="R270"/>
+<pin name="G1" x="-7.62" y="-2.54" length="middle"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="2.54" x2="-1.905" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="1.27" x2="-1.905" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="1.905" x2="0" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="1.905" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.905" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="0.635" x2="-1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="0" x2="-1.905" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="0" x2="-1.27" y2="0.635" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="0" x2="-1.27" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-1.27" x2="-1.905" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-2.54" x2="-1.905" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="-1.905" x2="0" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="1.905" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.905" y1="2.54" x2="1.905" y2="0.635" width="0.254" layer="94"/>
+<wire x1="1.905" y1="0.635" x2="1.27" y2="0.635" width="0.254" layer="94"/>
+<wire x1="0.635" y1="0" x2="1.27" y2="0.635" width="0.254" layer="94"/>
+<wire x1="1.905" y1="0.635" x2="2.54" y2="0.635" width="0.254" layer="94"/>
+<wire x1="2.54" y1="0.635" x2="3.175" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.905" y1="0.635" x2="1.27" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="1.905" y1="0.635" x2="2.54" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-0.635" x2="1.27" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="1.905" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-0.635" x2="1.905" y2="-2.54" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="4.259709375" width="0.254" layer="94"/>
+<polygon width="0.254" layer="94">
+<vertex x="-1.27" y="0.635"/>
+<vertex x="-1.27" y="-0.635"/>
+<vertex x="-1.905" y="0"/>
+</polygon>
+<polygon width="0.254" layer="94">
+<vertex x="1.905" y="0.635"/>
+<vertex x="1.27" y="-0.635"/>
+<vertex x="2.54" y="-0.635"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -1880,7 +1934,7 @@ No silk labels on pins
 <connect gate="G$1" pin="GL_A" pad="P$45"/>
 <connect gate="G$1" pin="GL_B" pad="P$40"/>
 <connect gate="G$1" pin="GL_C" pad="P$35"/>
-<connect gate="G$1" pin="GND" pad="GND_PAD VIA1 VIA2 VIA3 VIA4 VIA5 VIA6 VIA7 VIA8 VIA9 VIA10 VIA11 VIA12 VIA13 VIA14 VIA15 VIA16 VIA17 VIA18 VIA19 VIA20 VIA21 VIA22 VIA23 VIA24 VIA25 VIA26 VIA27 VIA28 VIA29 VIA30 VIA31 VIA32 VIA33 VIA34 VIA35 VIA36 VIA37 VIA38 VIA39 VIA40 VIA41 VIA42 VIA43 VIA44"/>
+<connect gate="G$1" pin="GND" pad="GND_PAD GND_PAD2 GND_PAD3 VIA1 VIA2 VIA3 VIA4 VIA5 VIA6 VIA7 VIA8 VIA9 VIA10 VIA11 VIA12 VIA13 VIA14 VIA15 VIA16 VIA17 VIA18 VIA19 VIA20 VIA21 VIA22 VIA23 VIA24 VIA25 VIA26 VIA27 VIA28 VIA29 VIA30 VIA31 VIA32 VIA33 VIA34 VIA35 VIA36 VIA37 VIA38 VIA39 VIA40 VIA41 VIA42 VIA43 VIA44"/>
 <connect gate="G$1" pin="GVDD" pad="P$13"/>
 <connect gate="G$1" pin="INH_A" pad="P$17"/>
 <connect gate="G$1" pin="INH_B" pad="P$19"/>
@@ -1915,6 +1969,23 @@ No silk labels on pins
 <connect gate="G$1" pin="SP2" pad="P$30"/>
 <connect gate="G$1" pin="SS_TR" pad="P$56"/>
 <connect gate="G$1" pin="VSENSE" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOSFET">
+<gates>
+<gate name="G$1" symbol="MOSFET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="D2PAK">
+<connects>
+<connect gate="G$1" pin="D2" pad="D2"/>
+<connect gate="G$1" pin="G1" pad="G1"/>
+<connect gate="G$1" pin="S3" pad="S3"/>
 </connects>
 <technologies>
 <technology name=""/>

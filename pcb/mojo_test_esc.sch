@@ -581,6 +581,117 @@ No silk labels on pins
 <circle x="36.83" y="-26.67" radius="2.289525" width="0.6096" layer="21"/>
 <circle x="36.83" y="-26.67" radius="2.289525" width="0.6096" layer="22"/>
 </package>
+<package name="DRV8302">
+<smd name="GND_PAD" x="0" y="0" dx="6.35" dy="3.61" layer="1" rot="R180"/>
+<pad name="VIA1" x="-6.5" y="-1.95" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA2" x="-6.5" y="-0.65" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA3" x="-6.5" y="0.65" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA4" x="-6.5" y="1.95" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA5" x="-5.2" y="-1.95" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA6" x="-5.2" y="-0.65" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA7" x="-5.2" y="0.65" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA8" x="-5.2" y="1.95" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA9" x="-3.9" y="-1.95" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA10" x="-3.9" y="-0.65" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA11" x="-3.9" y="0.65" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA12" x="-3.9" y="1.95" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA13" x="-2.6" y="-1.95" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA14" x="-2.6" y="-0.65" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA15" x="-2.6" y="0.65" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA16" x="-2.6" y="1.95" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA17" x="-1.3" y="-1.95" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA18" x="-1.3" y="-0.65" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA19" x="-1.3" y="0.65" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA20" x="-1.3" y="1.95" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA21" x="0" y="-1.95" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA22" x="0" y="-0.65" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA23" x="0" y="0.65" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA24" x="0" y="1.95" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA25" x="1.3" y="-1.95" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA26" x="1.3" y="-0.65" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA27" x="1.3" y="0.65" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA28" x="1.3" y="1.95" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA29" x="2.6" y="-1.95" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA30" x="2.6" y="-0.65" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA31" x="2.6" y="0.65" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA32" x="2.6" y="1.95" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA33" x="3.9" y="-1.95" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA34" x="3.9" y="-0.65" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA35" x="3.9" y="0.65" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA36" x="3.9" y="1.95" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA37" x="5.2" y="-1.95" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA38" x="5.2" y="-0.65" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA39" x="5.2" y="0.65" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA40" x="5.2" y="1.95" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA41" x="6.5" y="-1.95" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA42" x="6.5" y="-0.65" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA43" x="6.5" y="0.65" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<pad name="VIA44" x="6.5" y="1.95" drill="0.254" diameter="0.381" stop="no" thermals="no"/>
+<smd name="P$1" x="-6.75" y="-3.75" dx="0.3" dy="1.55" layer="1"/>
+<smd name="P$2" x="-6.25" y="-3.75" dx="0.3" dy="1.55" layer="1"/>
+<smd name="P$3" x="-5.75" y="-3.75" dx="0.3" dy="1.55" layer="1"/>
+<smd name="P$4" x="-5.25" y="-3.75" dx="0.3" dy="1.55" layer="1"/>
+<smd name="P$5" x="-4.75" y="-3.75" dx="0.3" dy="1.55" layer="1"/>
+<smd name="P$6" x="-4.25" y="-3.75" dx="0.3" dy="1.55" layer="1"/>
+<smd name="P$7" x="-3.75" y="-3.75" dx="0.3" dy="1.55" layer="1"/>
+<smd name="P$8" x="-3.25" y="-3.75" dx="0.3" dy="1.55" layer="1"/>
+<smd name="P$9" x="-2.75" y="-3.75" dx="0.3" dy="1.55" layer="1"/>
+<smd name="P$10" x="-2.25" y="-3.75" dx="0.3" dy="1.55" layer="1"/>
+<smd name="P$11" x="-1.75" y="-3.75" dx="0.3" dy="1.55" layer="1"/>
+<smd name="P$12" x="-1.25" y="-3.75" dx="0.3" dy="1.55" layer="1"/>
+<smd name="P$13" x="-0.75" y="-3.75" dx="0.3" dy="1.55" layer="1"/>
+<smd name="P$14" x="-0.25" y="-3.75" dx="0.3" dy="1.55" layer="1"/>
+<smd name="P$15" x="0.25" y="-3.75" dx="0.3" dy="1.55" layer="1"/>
+<smd name="P$16" x="0.75" y="-3.75" dx="0.3" dy="1.55" layer="1"/>
+<smd name="P$17" x="1.25" y="-3.75" dx="0.3" dy="1.55" layer="1"/>
+<smd name="P$18" x="1.75" y="-3.75" dx="0.3" dy="1.55" layer="1"/>
+<smd name="P$19" x="2.25" y="-3.75" dx="0.3" dy="1.55" layer="1"/>
+<smd name="P$20" x="2.75" y="-3.75" dx="0.3" dy="1.55" layer="1"/>
+<smd name="P$21" x="3.25" y="-3.75" dx="0.3" dy="1.55" layer="1"/>
+<smd name="P$22" x="3.75" y="-3.75" dx="0.3" dy="1.55" layer="1"/>
+<smd name="P$23" x="4.25" y="-3.75" dx="0.3" dy="1.55" layer="1"/>
+<smd name="P$24" x="4.75" y="-3.75" dx="0.3" dy="1.55" layer="1"/>
+<smd name="P$25" x="5.25" y="-3.75" dx="0.3" dy="1.55" layer="1"/>
+<smd name="P$26" x="5.75" y="-3.75" dx="0.3" dy="1.55" layer="1"/>
+<smd name="P$27" x="6.25" y="-3.75" dx="0.3" dy="1.55" layer="1"/>
+<smd name="P$28" x="6.75" y="-3.75" dx="0.3" dy="1.55" layer="1"/>
+<smd name="P$29" x="6.75" y="3.75" dx="0.3" dy="1.55" layer="1" rot="R180"/>
+<smd name="P$30" x="6.25" y="3.75" dx="0.3" dy="1.55" layer="1" rot="R180"/>
+<smd name="P$31" x="5.75" y="3.75" dx="0.3" dy="1.55" layer="1" rot="R180"/>
+<smd name="P$32" x="5.25" y="3.75" dx="0.3" dy="1.55" layer="1" rot="R180"/>
+<smd name="P$33" x="4.75" y="3.75" dx="0.3" dy="1.55" layer="1" rot="R180"/>
+<smd name="P$34" x="4.25" y="3.75" dx="0.3" dy="1.55" layer="1" rot="R180"/>
+<smd name="P$35" x="3.75" y="3.75" dx="0.3" dy="1.55" layer="1" rot="R180"/>
+<smd name="P$36" x="3.25" y="3.75" dx="0.3" dy="1.55" layer="1" rot="R180"/>
+<smd name="P$37" x="2.75" y="3.75" dx="0.3" dy="1.55" layer="1" rot="R180"/>
+<smd name="P$38" x="2.25" y="3.75" dx="0.3" dy="1.55" layer="1" rot="R180"/>
+<smd name="P$39" x="1.75" y="3.75" dx="0.3" dy="1.55" layer="1" rot="R180"/>
+<smd name="P$40" x="1.25" y="3.75" dx="0.3" dy="1.55" layer="1" rot="R180"/>
+<smd name="P$41" x="0.75" y="3.75" dx="0.3" dy="1.55" layer="1" rot="R180"/>
+<smd name="P$42" x="0.25" y="3.75" dx="0.3" dy="1.55" layer="1" rot="R180"/>
+<smd name="P$43" x="-0.25" y="3.75" dx="0.3" dy="1.55" layer="1" rot="R180"/>
+<smd name="P$44" x="-0.75" y="3.75" dx="0.3" dy="1.55" layer="1" rot="R180"/>
+<smd name="P$45" x="-1.25" y="3.75" dx="0.3" dy="1.55" layer="1" rot="R180"/>
+<smd name="P$46" x="-1.75" y="3.75" dx="0.3" dy="1.55" layer="1" rot="R180"/>
+<smd name="P$47" x="-2.25" y="3.75" dx="0.3" dy="1.55" layer="1" rot="R180"/>
+<smd name="P$48" x="-2.75" y="3.75" dx="0.3" dy="1.55" layer="1" rot="R180"/>
+<smd name="P$49" x="-3.25" y="3.75" dx="0.3" dy="1.55" layer="1" rot="R180"/>
+<smd name="P$50" x="-3.75" y="3.75" dx="0.3" dy="1.55" layer="1" rot="R180"/>
+<smd name="P$51" x="-4.25" y="3.75" dx="0.3" dy="1.55" layer="1" rot="R180"/>
+<smd name="P$52" x="-4.75" y="3.75" dx="0.3" dy="1.55" layer="1" rot="R180"/>
+<smd name="P$53" x="-5.25" y="3.75" dx="0.3" dy="1.55" layer="1" rot="R180"/>
+<smd name="P$54" x="-5.75" y="3.75" dx="0.3" dy="1.55" layer="1" rot="R180"/>
+<smd name="P$55" x="-6.25" y="3.75" dx="0.3" dy="1.55" layer="1" rot="R180"/>
+<smd name="P$56" x="-6.75" y="3.75" dx="0.3" dy="1.55" layer="1" rot="R180"/>
+<wire x1="-7.25" y1="2.75" x2="7.25" y2="2.75" width="0.127" layer="33"/>
+<wire x1="7.25" y1="2.75" x2="7.25" y2="-2.75" width="0.127" layer="33"/>
+<wire x1="7.25" y1="-2.75" x2="-7.25" y2="-2.75" width="0.127" layer="33"/>
+<wire x1="-7.25" y1="-2.75" x2="-7.25" y2="2.75" width="0.127" layer="33"/>
+<text x="-4.3" y="-1.9" size="0.6096" layer="33" font="vector" rot="R90">DRV8302</text>
+<circle x="-6.4" y="-1.9" radius="0.565684375" width="0.127" layer="33"/>
+<smd name="GND_PAD2" x="0" y="0" dx="14" dy="5.1" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="GND_PAD3" x="0" y="0" dx="14" dy="5.1" layer="16" stop="no" thermals="no" cream="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MOJO_HEADER_1">
@@ -702,6 +813,69 @@ No silk labels on pins
 <pin name="TMS" x="10.16" y="-25.4" visible="pin" length="short" direction="in" rot="R180"/>
 <text x="-5.08" y="33.274" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <text x="-5.08" y="-33.274" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
+</symbol>
+<symbol name="DRV8302">
+<pin name="RT_CLK" x="-15.24" y="35.56" length="middle"/>
+<pin name="COMP" x="-15.24" y="33.02" length="middle"/>
+<pin name="VSENSE" x="-15.24" y="30.48" length="middle"/>
+<pin name="PWRGD" x="-15.24" y="27.94" length="middle"/>
+<pin name="NOCTW" x="-15.24" y="25.4" length="middle"/>
+<pin name="NFAULT" x="-15.24" y="22.86" length="middle"/>
+<pin name="DTC" x="-15.24" y="20.32" length="middle"/>
+<pin name="M_PWM" x="-15.24" y="17.78" length="middle"/>
+<pin name="M_OC" x="-15.24" y="15.24" length="middle"/>
+<pin name="GAIN" x="-15.24" y="12.7" length="middle"/>
+<pin name="OC_ADJ" x="-15.24" y="10.16" length="middle"/>
+<pin name="DC_CAL" x="-15.24" y="7.62" length="middle"/>
+<pin name="GVDD" x="-15.24" y="5.08" length="middle"/>
+<pin name="CP1" x="-15.24" y="2.54" length="middle"/>
+<pin name="CP2" x="-15.24" y="0" length="middle"/>
+<pin name="EN_GATE" x="-15.24" y="-2.54" length="middle"/>
+<pin name="INH_A" x="-15.24" y="-5.08" length="middle"/>
+<pin name="INL_A" x="-15.24" y="-7.62" length="middle"/>
+<pin name="INH_B" x="-15.24" y="-10.16" length="middle"/>
+<pin name="INL_B" x="-15.24" y="-12.7" length="middle"/>
+<pin name="INH_C" x="-15.24" y="-15.24" length="middle"/>
+<pin name="INL_C" x="-15.24" y="-17.78" length="middle"/>
+<pin name="DVDD" x="-15.24" y="-20.32" length="middle"/>
+<pin name="REF" x="-15.24" y="-22.86" length="middle"/>
+<pin name="SO1" x="-15.24" y="-25.4" length="middle"/>
+<pin name="SO2" x="-15.24" y="-27.94" length="middle"/>
+<pin name="AVDD" x="-15.24" y="-30.48" length="middle"/>
+<pin name="AGND" x="-15.24" y="-33.02" length="middle"/>
+<wire x1="-10.16" y1="38.1" x2="-10.16" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-38.1" x2="10.16" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-38.1" x2="10.16" y2="38.1" width="0.254" layer="94"/>
+<wire x1="10.16" y1="38.1" x2="-10.16" y2="38.1" width="0.254" layer="94"/>
+<pin name="PVDD1" x="15.24" y="-33.02" visible="pin" length="middle" rot="R180"/>
+<pin name="SP2" x="15.24" y="-30.48" visible="pin" length="middle" rot="R180"/>
+<pin name="SN2" x="15.24" y="-27.94" visible="pin" length="middle" rot="R180"/>
+<pin name="SP1" x="15.24" y="-25.4" visible="pin" length="middle" rot="R180"/>
+<pin name="SN1" x="15.24" y="-22.86" visible="pin" length="middle" rot="R180"/>
+<pin name="SL_C" x="15.24" y="-20.32" visible="pin" length="middle" rot="R180"/>
+<pin name="GL_C" x="15.24" y="-17.78" visible="pin" length="middle" rot="R180"/>
+<pin name="SH_C" x="15.24" y="-15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="GH_C" x="15.24" y="-12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="BST_C" x="15.24" y="-10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="SL_B" x="15.24" y="-7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="GL_B" x="15.24" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="SH_B" x="15.24" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="GH_B" x="15.24" y="0" visible="pin" length="middle" rot="R180"/>
+<pin name="BST_B" x="15.24" y="2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="SL_A" x="15.24" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="GL_A" x="15.24" y="7.62" visible="pin" length="middle" rot="R180"/>
+<pin name="SH_A" x="15.24" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="GH_A" x="15.24" y="12.7" visible="pin" length="middle" rot="R180"/>
+<pin name="BST_A" x="15.24" y="15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="BIAS" x="15.24" y="17.78" visible="pin" length="middle" rot="R180"/>
+<pin name="PH@1" x="15.24" y="20.32" visible="pin" length="middle" rot="R180"/>
+<pin name="PH@2" x="15.24" y="22.86" visible="pin" length="middle" rot="R180"/>
+<pin name="BST_BK" x="15.24" y="25.4" visible="pin" length="middle" rot="R180"/>
+<pin name="PVDD2@1" x="15.24" y="27.94" visible="pin" length="middle" rot="R180"/>
+<pin name="PVDD2@2" x="15.24" y="30.48" visible="pin" length="middle" rot="R180"/>
+<pin name="EN_BUCK" x="15.24" y="33.02" visible="pin" length="middle" rot="R180"/>
+<pin name="SS_TR" x="15.24" y="35.56" visible="pin" length="middle" rot="R180"/>
+<pin name="GND" x="0" y="-43.18" visible="pin" length="middle" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -933,6 +1107,110 @@ No silk labels on pins
 </device>
 </devices>
 </deviceset>
+<deviceset name="DRV8302">
+<gates>
+<gate name="G$1" symbol="DRV8302" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DRV8302">
+<connects>
+<connect gate="G$1" pin="AGND" pad="P$28"/>
+<connect gate="G$1" pin="AVDD" pad="P$27"/>
+<connect gate="G$1" pin="BIAS" pad="P$49"/>
+<connect gate="G$1" pin="BST_A" pad="P$48"/>
+<connect gate="G$1" pin="BST_B" pad="P$43"/>
+<connect gate="G$1" pin="BST_BK" pad="P$52"/>
+<connect gate="G$1" pin="BST_C" pad="P$38"/>
+<connect gate="G$1" pin="COMP" pad="P$2"/>
+<connect gate="G$1" pin="CP1" pad="P$14"/>
+<connect gate="G$1" pin="CP2" pad="P$15"/>
+<connect gate="G$1" pin="DC_CAL" pad="P$12"/>
+<connect gate="G$1" pin="DTC" pad="P$7"/>
+<connect gate="G$1" pin="DVDD" pad="P$23"/>
+<connect gate="G$1" pin="EN_BUCK" pad="P$55"/>
+<connect gate="G$1" pin="EN_GATE" pad="P$16"/>
+<connect gate="G$1" pin="GAIN" pad="P$10"/>
+<connect gate="G$1" pin="GH_A" pad="P$47"/>
+<connect gate="G$1" pin="GH_B" pad="P$42"/>
+<connect gate="G$1" pin="GH_C" pad="P$37"/>
+<connect gate="G$1" pin="GL_A" pad="P$45"/>
+<connect gate="G$1" pin="GL_B" pad="P$40"/>
+<connect gate="G$1" pin="GL_C" pad="P$35"/>
+<connect gate="G$1" pin="GND" pad="GND_PAD GND_PAD2 GND_PAD3 VIA1 VIA2 VIA3 VIA4 VIA5 VIA6 VIA7 VIA8 VIA9 VIA10 VIA11 VIA12 VIA13 VIA14 VIA15 VIA16 VIA17 VIA18 VIA19 VIA20 VIA21 VIA22 VIA23 VIA24 VIA25 VIA26 VIA27 VIA28 VIA29 VIA30 VIA31 VIA32 VIA33 VIA34 VIA35 VIA36 VIA37 VIA38 VIA39 VIA40 VIA41 VIA42 VIA43 VIA44"/>
+<connect gate="G$1" pin="GVDD" pad="P$13"/>
+<connect gate="G$1" pin="INH_A" pad="P$17"/>
+<connect gate="G$1" pin="INH_B" pad="P$19"/>
+<connect gate="G$1" pin="INH_C" pad="P$21"/>
+<connect gate="G$1" pin="INL_A" pad="P$18"/>
+<connect gate="G$1" pin="INL_B" pad="P$20"/>
+<connect gate="G$1" pin="INL_C" pad="P$22"/>
+<connect gate="G$1" pin="M_OC" pad="P$9"/>
+<connect gate="G$1" pin="M_PWM" pad="P$8"/>
+<connect gate="G$1" pin="NFAULT" pad="P$6"/>
+<connect gate="G$1" pin="NOCTW" pad="P$5"/>
+<connect gate="G$1" pin="OC_ADJ" pad="P$11"/>
+<connect gate="G$1" pin="PH@1" pad="P$50"/>
+<connect gate="G$1" pin="PH@2" pad="P$51"/>
+<connect gate="G$1" pin="PVDD1" pad="P$29"/>
+<connect gate="G$1" pin="PVDD2@1" pad="P$53"/>
+<connect gate="G$1" pin="PVDD2@2" pad="P$54"/>
+<connect gate="G$1" pin="PWRGD" pad="P$4"/>
+<connect gate="G$1" pin="REF" pad="P$24"/>
+<connect gate="G$1" pin="RT_CLK" pad="P$1"/>
+<connect gate="G$1" pin="SH_A" pad="P$46"/>
+<connect gate="G$1" pin="SH_B" pad="P$41"/>
+<connect gate="G$1" pin="SH_C" pad="P$36"/>
+<connect gate="G$1" pin="SL_A" pad="P$44"/>
+<connect gate="G$1" pin="SL_B" pad="P$39"/>
+<connect gate="G$1" pin="SL_C" pad="P$34"/>
+<connect gate="G$1" pin="SN1" pad="P$33"/>
+<connect gate="G$1" pin="SN2" pad="P$31"/>
+<connect gate="G$1" pin="SO1" pad="P$25"/>
+<connect gate="G$1" pin="SO2" pad="P$26"/>
+<connect gate="G$1" pin="SP1" pad="P$32"/>
+<connect gate="G$1" pin="SP2" pad="P$30"/>
+<connect gate="G$1" pin="SS_TR" pad="P$56"/>
+<connect gate="G$1" pin="VSENSE" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="supply1">
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+ GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+ Please keep in mind, that these devices are necessary for the
+ automatic wiring of the supply signals.&lt;p&gt;
+ The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+ In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+ &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="GND">
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </libraries>
@@ -946,6 +1224,8 @@ No silk labels on pins
 </classes>
 <parts>
 <part name="B1" library="mojo_test_esc" deviceset="MOJO_NO_ANALOG" device="V3_NO_LABEL"/>
+<part name="U$1" library="mojo_test_esc" deviceset="DRV8302" device=""/>
+<part name="GND1" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -954,10 +1234,19 @@ No silk labels on pins
 <instances>
 <instance part="B1" gate="G$2" x="-27.94" y="60.96"/>
 <instance part="B1" gate="G$3" x="-27.94" y="-10.16"/>
+<instance part="U$1" gate="G$1" x="53.34" y="50.8"/>
+<instance part="GND1" gate="1" x="53.34" y="2.54"/>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="GND" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="53.34" y1="7.62" x2="53.34" y2="5.08" width="0.1524" layer="91"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
